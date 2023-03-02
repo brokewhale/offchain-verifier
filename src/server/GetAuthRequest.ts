@@ -1,12 +1,13 @@
 import { auth } from '@iden3/js-iden3-auth';
 import { v4 as uuidv4 } from 'uuid';
 import { optType, requestMap } from './main';
+import { getBaseUrl } from './utils/others/getBaseUrl';
 
 // GetAuthRequest returns auth request
 export async function GetAuthRequest({ _req, res }: optType) {
   // Audience is verifier id
   // const hostUrl = getBaseUrl(_req);
-  const hostUrl = 'https://2842-2c0f-2a80-3b-c10-00-748.eu.ngrok.io';
+  const hostUrl = process.env.NGROK_URL;
   const sessionId = uuidv4();
   const callbackURL = '/callback';
   const audience =

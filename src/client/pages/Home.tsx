@@ -27,7 +27,7 @@ const Home = (props: Props) => {
 
   return (
     <Box>
-      <Box h="100vh" bg="#E2E2E2">
+      <Box minH="100vh" bg="#E2E2E2">
         <Box as="nav">
           <Stack
             direction="row"
@@ -67,7 +67,7 @@ const Home = (props: Props) => {
             </HStack>
           </Stack>
         </Box>
-        <HStack mt="97px" gap="72px">
+        <HStack mt="97px" pb="50px" gap="72px">
           <VStack
             w="315px"
             h="385px"

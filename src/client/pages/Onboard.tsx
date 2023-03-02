@@ -67,10 +67,10 @@ const Onboard = (props: Props) => {
   return (
     <>
       <main>
-        <Box bg="#F0F2F5" h="100vh">
-          <Flex h="100vh">
+        <Box bg="#F0F2F5" minH="100vh">
+          <Flex minH="100vh">
             {/* left section */}
-            <Box flex="0.55">
+            <Box flex="0.55" pb="50px">
               <Box
                 pt={10}
                 px="54px"

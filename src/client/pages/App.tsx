@@ -120,8 +120,8 @@ function App() {
             </ModalBody>
           </ModalContent>
         </Modal>
-        <Box bg="#F0F2F5" h="100vh">
-          <Flex h="100vh">
+        <Box bg="#F0F2F5" minH="100vh">
+          <Flex minH="100vh">
             {/* left section */}
             <Box flex="0.45" position="relative" zIndex="2">
               <Image
